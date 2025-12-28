@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+let name="marium";
+let stdid=1052;
+let eng=90;
+let math=34;
+let urdu=78;
+let sci=67;
+let sst=78;
+let obt=eng+urdu+math+sci+sst
+let total=500;
+let per=obt/total*100;
+console.log(obt,per)    
+if(per>=90){
+    console.log("A")
+}
+else if(per>=80){
+    console.log("B")
+}
+
+else if(per>=70){
+    console.log("C")
+}
+else if(per>=60){
+    console.log("D")
+}
+else{
+    console.log("Fail")
+}
+console.log("taffic light")
+let light="yellow";
+if(light=="red" || light=="RED" || light=="Red"){
+    console.log("stop")
+}
+else if(light=="yellow" ||light=="YEllow"){
+    console.log("Start")
+}
+else if(light=="Green" || light=="green"
+){
+    console.log("go")
+}
+else{
+    console.log("invalid")
+}
+
+// login panel
+let username=prompt("enter your username")
+let password=prompt("Enter your password")
+if(username=="Admin" && password=="Admin123")
+{
+    console.log("your username is" ,username,"and your pasword is ",password)
+    console.log("welcome to web page")
+    let age =Number(prompt("enter your age"));
+    if(age>="18"){
+        console.log(
+        "you are adult")
+    }
+    else{
+        console.log("you are child")
+    }
+}
+else if(username=="Admin" && password!="Admin123"){
+    
+    console.log("your username is" ,username,"and your pasword is ",password)
+
+    console.log("Password invalid")
+    let forget=prompt("you want to reset your password \n select option \n 1.yes \n 2.no")
+    if(forget==1){
+        console.log("email")
+
+    }
+    else{
+        console.log("your username is" ,username,"and your pasword is ",password)
+
+        console.log("try again")
+    }
+}
+else {
+    console.log("user not found")
+}
+
+let table=prompt("enter table")
+//for loop
+for(let a=1;a<=20;a++){
+   
+    console.log( table,"X ",a,"=",a*table)
+}
+    </script>
+</body>
+</html>
